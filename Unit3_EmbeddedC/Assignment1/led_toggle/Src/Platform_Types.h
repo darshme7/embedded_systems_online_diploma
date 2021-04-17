@@ -45,6 +45,4 @@ typedef signed long				sint32_least;
 
 typedef float                   float32;
 typedef double                  float64;
-
-
 #endif
