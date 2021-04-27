@@ -1,0 +1,40 @@
+#Symbols
+
+unit3_lab4_coretxM4.elf:
+20000410 B _E_bss
+2000000c D _E_data
+000001e0 T _E_text
+2000000c B _S_bss
+20000000 D _S_data
+20000008 D data_R
+00000120 T Default_Handler
+20000004 D den_R
+20000000 D dir_R
+00000120 W H_fault_Handler
+2000000c b i
+00000010 T main
+00000120 W NMI_Handler
+0000012c T Reset_Handler
+20000010 b stack_top
+00000000 T vectors
+
+startup.o:
+         U _E_bss
+         U _E_data
+         U _E_text
+         U _S_bss
+         U _S_data
+00000000 T Default_Handler
+00000000 W H_fault_Handler
+         U main
+00000000 W NMI_Handler
+0000000c T Reset_Handler
+00000000 b stack_top
+00000000 R vectors
+
+main.o:
+00000008 D data_R
+00000004 D den_R
+00000000 D dir_R
+00000000 b i
+00000000 T main
