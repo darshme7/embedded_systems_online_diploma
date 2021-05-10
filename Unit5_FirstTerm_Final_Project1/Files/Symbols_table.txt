@@ -1,0 +1,45 @@
+Pressure_Controller.elf: Symbols
+
+2000000c B _E_bss
+20000004 D _E_data
+08000440 T _E_text
+20000004 B _S_bss
+20000000 D _S_data
+2000100c B _stack_top
+20001011 B AA_alarmstate
+2000100c B AA_state
+20001010 B AA_state_id
+08000384 W Bus_Fault_Handler
+08000384 T Default_Handler
+080000b8 T Delay
+080000dc T getPressureVal
+08000218 T getPressureValue
+08000144 T GPIO_INITIALIZATION
+08000384 W Hard_Fault_Handler
+080001f4 T main
+08000384 W MM_Handler
+08000384 W NMI_Handler
+20001014 B PC_alarmstate
+20000004 B PC_pressure
+20001018 B PC_state
+20001013 B PC_state_id
+20000000 D PC_threshold
+20000008 B PS_pressure
+2000101c B PS_state
+20001012 B PS_state_id
+08000390 T Reset_Handler
+080000f4 T Set_Alarm_actuator
+0800001c T setAlarm
+080001c4 T setup
+08000094 T ST_AA_alarmOff
+08000070 T ST_AA_alarmOn
+080002b4 T ST_PC_HPdetected
+08000274 T ST_PC_waiting
+0800033c T ST_PS_busy
+08000384 W Usage_Fault_Handler
+08000000 T vectors
+
+
+
+
+

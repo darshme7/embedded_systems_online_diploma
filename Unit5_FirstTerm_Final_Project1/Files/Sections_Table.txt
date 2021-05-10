@@ -1,0 +1,17 @@
+Pressure_Controller.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000440  08000000  08000000  00008000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000004  20000000  08000440  00010000  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          0000101c  20000004  08000444  00010004  2**2
+                  ALLOC
+  3 .comment      00000011  00000000  00000000  00010004  2**0
+                  CONTENTS, READONLY
+  4 .ARM.attributes 00000033  00000000  00000000  00010015  2**0
+                  CONTENTS, READONLY
+
+
+
