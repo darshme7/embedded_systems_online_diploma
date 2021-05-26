@@ -4,8 +4,10 @@
  * Created: 26-May-21 12:39:33 PM
  *  Author: mostafa
  */ 
-#define F_CPU	1000000UL
+
 #include "avr/delay.h"
+
+#define F_CPU	1000000UL
 
 #define PORTD_BASE	0x32
 #define DDRD_BASE	0x31
