@@ -35,11 +35,18 @@
 #define LCD_FIRST_LINE					(0x80)
 #define LCD_SECOND_LINE					(0xC0)
 
+#define LCD_8_BIT_MODE
+//#define LCD_4_BIT_MODE
+
+#ifdef	LCD_4_BIT_MODE
+#define SHIFT_4							4
+#endif
+
 #define LCD_control						GPIOA
 #define LCD_PORT						GPIOA
 
 void LCD_init(void);
-void LCD_printChar(char data);
+void LCD_printChar(uint8 data);
 void LCD_printString(char * data);
 void LCD_goToXY(uint8 line ,uint8 position);
 void LCD_clearScreen(void);

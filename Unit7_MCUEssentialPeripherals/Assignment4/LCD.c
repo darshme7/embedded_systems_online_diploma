@@ -4,6 +4,7 @@
  * Created: 27-May-21 7:53:16 PM
  *  Author: Mostafa
  */ 
+
 #include "LCD.h"
 
 GPIO_config cfg;
@@ -38,11 +39,9 @@ void LCD_isBusy(void){
 	MCAL_GPIO_writePin(LCD_control, RS, GPIO_LOW);
 	MCAL_GPIO_writePin(LCD_control, RW, GPIO_HIGH);
 	LCD_kick();	
-
 	while(MCAL_GPIO_readPin(LCD_PORT, GPIO_PIN7) == BUSY)LCD_kick();
 
 	MCAL_GPIO_writePin(LCD_control, RW, GPIO_LOW);
-
 	for(i=0;i<8;i++){
 		cfg.GPIO_PinNumber 		= LCD_Pins[i];
 		cfg.GPIO_PinMode   		= GPIO_MODE_OUTPUT_PP;
@@ -53,9 +52,18 @@ void LCD_isBusy(void){
 
 void LCD_sendCommand(uint8 command){
 
+#ifdef LCD_8_BIT_MODE
 	LCD_isBusy();
-
 	MCAL_GPIO_writePort(LCD_PORT,command);
+#endif
+
+#ifdef LCD_4_BIT_MODE
+	MCAL_GPIO_writePort(LCD_PORT,(command & 0xF0));
+	MCAL_GPIO_writePin(LCD_control, RS, GPIO_LOW);
+	MCAL_GPIO_writePin(LCD_control, RW, GPIO_LOW);
+	LCD_kick();
+	MCAL_GPIO_writePort(LCD_PORT,(command<<SHIFT_4));
+#endif
 	MCAL_GPIO_writePin(LCD_control, RS, GPIO_LOW);
 	MCAL_GPIO_writePin(LCD_control, RW, GPIO_LOW);
 	LCD_kick();
@@ -69,7 +77,6 @@ void LCD_clearScreen(void){
 void LCD_init(void){
 
 	uint8 i;
-
 	delay(20);
 
 	for(i=0;i<11;i++){
@@ -82,25 +89,40 @@ void LCD_init(void){
 
 	delay(15);
 
+#ifdef LCD_8_BIT_MODE
 	LCD_sendCommand(LCD_8BITS_2LINES_5X8);
+#endif
+
+#ifdef LCD_4_BIT_MODE
+	LCD_sendCommand(LCD_RETURN_HOME);
+	LCD_sendCommand(LCD_4BITS_2LINES_5X8);
+#endif
 	LCD_sendCommand(LCD_ENTRY_INC);
 	LCD_sendCommand(LCD_DISPLAY_ON_CURSOR_BLINK);
 }
 
-void LCD_printChar(char data){
+void LCD_printChar(uint8 data){
 
 	if(LCD_cursor_position == 32){
 		LCD_clearScreen();
 		LCD_goToXY(1,0);
 	}
 
+#ifdef LCD_8_BIT_MODE
 	LCD_isBusy();
-
 	MCAL_GPIO_writePort(LCD_PORT,data);
+#endif
+
+#ifdef LCD_4_BIT_MODE
+	MCAL_GPIO_writePort(LCD_PORT,(data & 0xF0));
 	MCAL_GPIO_writePin(LCD_control, RS, GPIO_HIGH);
 	MCAL_GPIO_writePin(LCD_control, RW, GPIO_LOW);
 	LCD_kick();
-
+	MCAL_GPIO_writePort(LCD_PORT,((data & 0x0F)<<SHIFT_4));
+#endif
+	MCAL_GPIO_writePin(LCD_control, RS, GPIO_HIGH);
+	MCAL_GPIO_writePin(LCD_control, RW, GPIO_LOW);
+	LCD_kick();
 	LCD_cursor_position++;
 
 	if( LCD_cursor_position == 16){
