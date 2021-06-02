@@ -24,17 +24,7 @@
 #include "stm32f103c6_gpio_driver.h"
 #include "LCD.h"
 #include "Keypad.h"
-
-#define ZERO 	0x01
-#define ONE 	0x79
-#define TWO 	0x24
-#define THREE 	0x30
-#define FOUR 	0x58//0 101 1000
-#define FIVE 	0x12
-#define SIX 	0x02
-#define SEVEN	0x19
-#define EIGHT 	0x00
-#define NINE 	0x10
+#include "7segment.h"
 
 void clockInit(void){
 
@@ -43,62 +33,14 @@ void clockInit(void){
 
 }
 
-void gpioInit(void){
-
-	GPIO_config cfg;
-
-	cfg.GPIO_PinNumber 		= GPIO_PIN9;
-	cfg.GPIO_PinMode   		= GPIO_MODE_OUTPUT_PP;
-	cfg.GPIO_OutputSpeed	= GPIO_SPEED_10M;
-	MCAL_GPIO_init(GPIOB, &cfg);
-	cfg.GPIO_PinNumber 		= GPIO_PIN10;
-	cfg.GPIO_PinMode   		= GPIO_MODE_OUTPUT_PP;
-	cfg.GPIO_OutputSpeed	= GPIO_SPEED_10M;
-	MCAL_GPIO_init(GPIOB, &cfg);
-	cfg.GPIO_PinNumber 		= GPIO_PIN11;
-	cfg.GPIO_PinMode   		= GPIO_MODE_OUTPUT_PP;
-	cfg.GPIO_OutputSpeed	= GPIO_SPEED_10M;
-	MCAL_GPIO_init(GPIOB, &cfg);
-	cfg.GPIO_PinNumber 		= GPIO_PIN12;
-	cfg.GPIO_PinMode   		= GPIO_MODE_OUTPUT_PP;
-	cfg.GPIO_OutputSpeed	= GPIO_SPEED_10M;
-	MCAL_GPIO_init(GPIOB, &cfg);
-	cfg.GPIO_PinNumber 		= GPIO_PIN13;
-	cfg.GPIO_PinMode   		= GPIO_MODE_OUTPUT_PP;
-	cfg.GPIO_OutputSpeed	= GPIO_SPEED_10M;
-	MCAL_GPIO_init(GPIOB, &cfg);
-	cfg.GPIO_PinNumber 		= GPIO_PIN14;
-	cfg.GPIO_PinMode   		= GPIO_MODE_OUTPUT_PP;
-	cfg.GPIO_OutputSpeed	= GPIO_SPEED_10M;
-	MCAL_GPIO_init(GPIOB, &cfg);
-	cfg.GPIO_PinNumber 		= GPIO_PIN15;
-	cfg.GPIO_PinMode   		= GPIO_MODE_OUTPUT_PP;
-	cfg.GPIO_OutputSpeed	= GPIO_SPEED_10M;
-	MCAL_GPIO_init(GPIOB, &cfg);
-
-	MCAL_GPIO_writePort(GPIOB,((0x7F)<<9));
-
-}
-
-uint8 i = 0,numbers[]={
-		ZERO,
-		ONE,
-		TWO,
-		THREE,
-		FOUR,
-		FIVE,
-		SIX,
-		SEVEN,
-		EIGHT,
-		NINE
-};
 int main(void)
 {
 	clockInit();
-	gpioInit();
+	_7segment_init();
 	LCD_init();
 	KEYPAD_init();
 
+	uint8 i = 0;
 	char data;
 
 	LCD_printString("Hello");
@@ -108,10 +50,11 @@ int main(void)
 	delay(300);
 	LCD_clearScreen();
 	while(1){
-		MCAL_GPIO_writePort(GPIOB,(numbers[i])<<9);
-		delay(80);
-		data = KEYPAD_getChar();
 
+		_7segment_printNumber(i);
+		delay(50);
+
+		data = KEYPAD_getChar();
 		switch(data){
 		case '!':
 			LCD_clearScreen();
@@ -121,8 +64,8 @@ int main(void)
 		default:
 			LCD_printChar(data);
 		}
-	if(i==9)i=0;
-	else	i++;
+		if(i==9)i=0;
+		else	i++;
 	}
 }
 
