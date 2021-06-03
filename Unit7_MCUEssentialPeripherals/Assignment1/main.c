@@ -25,7 +25,7 @@ typedef union{
 	volatile unsigned long ALL_FIELDS;
 	struct {
 		volatile unsigned long AFIOEN:1;
-		volatile unsigned long :1;
+		volatile unsigned long Reserved:1;
 		volatile unsigned long IOPAEN:1;
 		volatile unsigned long IOPBEN:1;
 		volatile unsigned long IOPCEN:1;
