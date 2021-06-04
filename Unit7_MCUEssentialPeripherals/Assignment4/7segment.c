@@ -20,7 +20,6 @@ uint8 numbers[] =
 		NINE
 };
 
-
 void _7segment_init(){
 
 	GPIO_config cfg;
