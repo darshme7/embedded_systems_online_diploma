@@ -1,0 +1,9 @@
+LCD.c:15:6:delay	24	static
+LCD.c:22:6:LCD_kick	8	static
+LCD.c:29:6:LCD_isBusy	16	static
+LCD.c:53:6:LCD_sendCommand	16	static
+LCD.c:72:6:LCD_clearScreen	8	static
+LCD.c:77:6:LCD_init	16	static
+LCD.c:104:6:LCD_printChar	16	static
+LCD.c:135:6:LCD_printString	16	static
+LCD.c:142:6:LCD_goToXY	16	static

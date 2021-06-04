@@ -1,0 +1,2 @@
+7segment.c:24:6:_7segment_init	16	static
+7segment.c:61:6:_7segment_printNumber	16	static
