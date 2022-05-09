@@ -27,18 +27,18 @@
 #define set(reg,bit) reg|=1<<bit
 
 typedef union{
-	uint32 ALL_FIELDS;
+	volatile uint32 ALL_FIELDS;
 	struct {
-		uint32 :13;
-		uint32 pin13:1;
+		volatile uint32 :13;
+		volatile uint32 pin13:1;
 	}pins;
 }GPIOPA_ODR;
 
 typedef union{
-	uint32 ALL_FIELDS;
+	volatile uint32 ALL_FIELDS;
 	struct {
-		uint32 :20;
-		uint32 modepin13 :4;
+		volatile uint32 :20;
+		volatile uint32 modepin13 :4;
 	}modes;
 }GPIOPA_CRH;
 

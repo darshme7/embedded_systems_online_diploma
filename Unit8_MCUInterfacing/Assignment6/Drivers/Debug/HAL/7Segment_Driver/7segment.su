@@ -1,0 +1,2 @@
+../HAL/7Segment_Driver/7segment.c:24:6:_7segment_init	16	static
+../HAL/7Segment_Driver/7segment.c:61:6:_7segment_printNumber	16	static

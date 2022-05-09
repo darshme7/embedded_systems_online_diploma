@@ -1,0 +1,9 @@
+../HAL/LCD_Driver/LCD.c:15:6:delay	24	static
+../HAL/LCD_Driver/LCD.c:22:6:LCD_kick	8	static
+../HAL/LCD_Driver/LCD.c:29:6:LCD_isBusy	16	static
+../HAL/LCD_Driver/LCD.c:52:6:LCD_sendCommand	16	static
+../HAL/LCD_Driver/LCD.c:71:6:LCD_clearScreen	8	static
+../HAL/LCD_Driver/LCD.c:76:6:LCD_init	16	static
+../HAL/LCD_Driver/LCD.c:103:6:LCD_printChar	16	static
+../HAL/LCD_Driver/LCD.c:134:6:LCD_printString	16	static
+../HAL/LCD_Driver/LCD.c:141:6:LCD_goToXY	16	static
