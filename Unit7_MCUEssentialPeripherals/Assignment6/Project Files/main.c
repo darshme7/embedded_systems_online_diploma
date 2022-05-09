@@ -9,7 +9,8 @@
 int main(void)
 {
 	LCD_init();
-	LCD_printString("Learn in Depth"); 
+	LCD_printString("Learn in Depth");
+	
 	while(1)
 	{
 		
