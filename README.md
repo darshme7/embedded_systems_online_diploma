@@ -1,5 +1,7 @@
 # Embedded Systems Online Diploma
 
+[![image](https://github.com/darshme7/embedded_systems_online_diploma/blob/master/websitesnap.png)](https://www.learn-in-depth.com/online-diploma/darshme7%40gmail.com)
+
 
 ---
 
@@ -28,17 +30,17 @@
 
 ### Third Term ![image](https://progress-bar.dev/0/?title=Start_Soon&color=ff0000)
 
-- [Unit 12: Advanced Topics](https://github.com/Mina-Karam/Master_Embedded_Systems) ![image](https://progress-bar.dev/0/)
-- [Unit 13: Automotive Protocols](https://github.com/Mina-Karam/Master_Embedded_Systems) ![image](https://progress-bar.dev/0/)
-- [Unit 15: RTOS Basics](https://github.com/Mina-Karam/Master_Embedded_Systems) ![image](https://progress-bar.dev/0/)
-- [Unit 16: AUTOSAR Basics](https://github.com/Mina-Karam/Master_Embedded_Systems) ![image](https://progress-bar.dev/0/)
-- [Unit 17: Embedded Linux Basics](https://github.com/Mina-Karam/Master_Embedded_Systems) ![image](https://progress-bar.dev/0/)
+- [Unit 12: Advanced Topics](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 13: Automotive Protocols](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 15: RTOS Basics](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 16: AUTOSAR Basics](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 17: Embedded Linux Basics](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
 
 ---
 
 ## Overall progress ![image](https://progress-bar.dev/2/?scale=3&title=Terms&suffix=&width=230&color=aa00ff)
 
-
+[![image](https://github.com/darshme7/embedded_systems_online_diploma/blob/master/certificate.png)](https://www.learn-in-depth.com/online-diploma/darshme7%40gmail.com)
 
 ---
 
