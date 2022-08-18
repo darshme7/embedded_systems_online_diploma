@@ -23,7 +23,7 @@
 - [Unit 7: MCU Essential Peripherals](Unit7_MCUEssentialPeripherals) ![image](https://progress-bar.dev/100/)
 - [Unit 8: MCU Interfacing](Unit8_MCUInterfacing) ![image](https://progress-bar.dev/100/)
 - [Unit 9: MCU Timers/ADC](Unit9_TimersAndADC) ![image](https://progress-bar.dev/100/)
-- [Unit 10: SW Testing/Validation] ![image](https://progress-bar.dev/100/)
+- [Unit 10: SW Testing/Validation](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/100/)
 - [Unit 11: Apply on Embedded Systems Jobs](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/100/?title=Exams&color=bababa)
 
 ---
