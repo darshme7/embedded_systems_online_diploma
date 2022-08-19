@@ -11,7 +11,7 @@
 - [Unit 1: Diploma Prerequisites](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/100/?title=No_Assignments&color=bababa)
 - [Unit 2: C Programming](C_Programming) ![image](https://progress-bar.dev/100/)
 - [Unit 3: Embedded C](Unit3_EmbeddedC) ![image](https://progress-bar.dev/100/)
-- [Unit 4: Data Structures](Unit4_DataStructures) ![image](https://progress-bar.dev/100/)
+- [Unit 4: Data Structures/UML](Unit4_DataStructures) ![image](https://progress-bar.dev/100/)
 - [Unit 5: First Term Project 1](Unit5_FirstTerm_Final_Project1) ![image](https://progress-bar.dev/100/)
 - [Unit 5: First Term Project 2](Unit5_FirstTerm_Final_Project2) ![image](https://progress-bar.dev/100/)
 
