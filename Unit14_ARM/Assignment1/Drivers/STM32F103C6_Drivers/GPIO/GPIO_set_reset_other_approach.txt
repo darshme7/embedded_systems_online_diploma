@@ -1,0 +1,99 @@
+
+	//	switch(PinNumber){
+	//	case GPIO_PIN0:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR0 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR0 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN1:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR1 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR1 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN2:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR2 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR2 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN3:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR3 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR3 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN4:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR4 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR4 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN5:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR5 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR5 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN6:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR6 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR6 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN7:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR7 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR7 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN8:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR8 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR8 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN9:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR9 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR9 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN10:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR10 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR10 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN11:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR11 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR11 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN12:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR12 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR12 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN13:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR13 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR13 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN14:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR14 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR14 = 0b0 ;
+	//		break;
+	//	case GPIO_PIN15:
+	//		if(data)
+	//			GPIOx->ODR.bits.ODR15 = 0b1 ;
+	//		else
+	//			GPIOx->ODR.bits.ODR15 = 0b0 ;
+	//		break;
+	//	}

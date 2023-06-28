@@ -1,0 +1,3 @@
+../HAL/EEPROM_Driver/EEPROM.c:9:6:EEPROM_init	32	static
+../HAL/EEPROM_Driver/EEPROM.c:24:6:EEPROM_WriteNBytes	296	static
+../HAL/EEPROM_Driver/EEPROM.c:35:6:EEPROM_ReadByte	40	static

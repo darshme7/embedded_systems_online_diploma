@@ -1,0 +1,4 @@
+../STM32F103C6_Drivers/RCC/stm32f103c6_rcc_driver.c:17:8:MCAL_RCC_SYSCLCKFreq	4	static
+../STM32F103C6_Drivers/RCC/stm32f103c6_rcc_driver.c:26:8:MCAL_RCC_HCLCKFreq	8	static
+../STM32F103C6_Drivers/RCC/stm32f103c6_rcc_driver.c:30:8:MCAL_RCC_PCLCK1Freq	8	static
+../STM32F103C6_Drivers/RCC/stm32f103c6_rcc_driver.c:34:8:MCAL_RCC_PCLCK2Freq	8	static
