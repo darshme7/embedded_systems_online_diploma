@@ -31,10 +31,11 @@
 ### Third Term ![image](https://progress-bar.dev/0/?title=Start_Soon&color=ff0000)
 
 - [Unit 12: Advanced Topics](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
-- [Unit 13: Automotive Protocols](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
-- [Unit 15: RTOS Basics](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
-- [Unit 16: AUTOSAR Basics](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
-- [Unit 17: Embedded Linux Basics](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 13: Mastering CAN Protocol](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 14: Mastering ARM CortexM3/4](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 15: Create Your Own RTOS](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 16: Design Pattern](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
+- [Unit 17: Introduction to Embedded Linux/AUTOSAR](https://github.com/darshme7/embedded_systems_online_diploma) ![image](https://progress-bar.dev/0/)
 
 ---
 
